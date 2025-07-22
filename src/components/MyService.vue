@@ -6,7 +6,7 @@
           Servicios
         </h1>
         <p class="text-gray-600 mb-12 text-xl">
-          Creamos soluciones tecnológicas <span class="text-indigo-700">personalizadas</span> para impulsar tu negocio. Estos son algunos de los servicios que ofrecemos:
+          Creamos soluciones tecnológicas <span class="text-indigo-700 font-semibold">personalizadas</span> para impulsar tu negocio. Estos son algunos de los servicios que ofrecemos:
         </p>
       </div>
 
@@ -97,7 +97,26 @@
         </p>
       </div>
     </div>
-    <div class="bg-gradient-to-r from-indigo-600 via-indigo-500 to-indigo-400
+    <div class="">
+      <div class="text-4xl sm:text-6xl mt-10 mb-4 leading-tight tracking-tight">
+        <h1 class="font-bold text-gray-900 mb-2">Clientes</h1>
+        <!--<p class="font-inter text-gray-600 text-xl mb-6">que confiaron en nosotros</p>-->
+        <p class="font-inter text-gray-600 mb-12 text-xl">
+          que <span class="text-indigo-600 font-semibold">confiaron</span> en nosotros
+        </p>
+      </div>
+      <div class="flex justify-center items-center mt-6 mb-6 bg-indigo-700 p-4 text-white">
+        <img title="Break Burger - Desarrollo de sistema de pedidos" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente1.avif" alt="Cliente 1">
+          <p class=" font-inter ml-2 mr-8">Break Burger</p>
+        <img title="Cesar Pereyra Seguros - Desarrollo de Landing Page" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente2.png" alt="Cliente 2">
+          <p class=" font-inter ml-2 mr-8">Inmobiliaria Ezequiel</p>
+        <img title="Jaqueline - Desarrollo de sistema de facturación" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente3.png" alt="Cliente 3">
+          <p class=" font-inter ml-2 mr-8">Cesar Pereyra Seguros</p>
+        <img title="Inmobiliaria Ezequiel - Desarrollo de Landing Page" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente4.jpg" alt="Cliente 4">
+          <p class=" font-inter ml-2 mr-8">Yaqueline Company</p>
+      </div>
+    </div>
+    <!--<div class="bg-gradient-to-r from-indigo-600 via-indigo-500 to-indigo-400
         border-4 border-white shadow-lg shadow-indigo-400/50
         max-w-6xl mx-auto p-4 rounded-2xl mt-20 mb-20">
       <div class="flex justify-between items-center">
@@ -120,7 +139,7 @@
           <img src="../assets/team.svg" alt="team" class="w-[100%] -translate-x-10 -translate-y-32 md:-translate-x-50 md:-translate-y-50 relative" />
         </div>
       </div>
-    </div>
+    </div>-->
   </section>
 </template>
 
