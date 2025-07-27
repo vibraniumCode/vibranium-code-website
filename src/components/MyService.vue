@@ -1,145 +1,96 @@
 <template>
-  <section class="pt-10 font-inter text-center text-white to-white relative z-10">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="max-8-xl mx-auto mb-12 px-4 md:px-52">
-        <h1 class="text-gray-900 font-bold text-4xl sm:text-6xl mt-10 mb-4 leading-tight tracking-tight">
-          Servicios
-        </h1>
-        <p class="text-gray-600 mb-12 text-xl">
-          Creamos soluciones tecnológicas <span class="text-indigo-700 font-semibold">personalizadas</span> para impulsar tu negocio. Estos son algunos de los servicios que ofrecemos:
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        <!-- CARD 1 -->
+  <section class="pt-4 font-inter text-center text-white to-white relative z-10 m-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap- items-center max-w-7xl mx-auto mb-12 px-4">
+      <!-- Columna del texto -->
+      <div class="relative rounded-xl overflow-hidden p-8 md:p-12">
+        <!-- Glow radial amarillo suave -->
         <div
-          :class="[
-            'bg-white rounded-sm p-6 sm:border-b-2 transition duration-300 group cursor-pointer',
-            hoveredCard === 'software' ? 'border-indigo-500 sm:border-b-4' : 'border-indigo-300'
-          ]"
-          @mouseenter="hoveredCard = 'software'"
-        >
-          <div class="flex justify-center items-center h-16 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-indigo-600 group-hover:scale-150 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M9.75 19.5h4.5M3 5.25h18v11.25H3z" />
-            </svg>
-          </div>
-          <h3 class="font-semibold text-md text-gray-700 tracking-widest">SOFTWARE A MEDIDA</h3>
-        </div>
-
-        <!-- CARD 2 -->
-        <div
-          :class="[
-            'bg-white rounded-sm p-6 sm:border-b-2 transition duration-300 group cursor-pointer',
-            hoveredCard === 'web' ? 'border-indigo-500 sm:border-b-4' : 'border-indigo-300'
-          ]"
-          @mouseenter="hoveredCard = 'web'"
-          
-        >
-          <div class="flex justify-center items-center h-16 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-600 group-hover:scale-150 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M4.5 4.5h15v15h-15z M9 18v-3h6v3" />
-
-            </svg>
-          </div>
-          <h3 class="font-semibold text-md text-gray-700 tracking-widest">DESARROLLO WEB</h3>
-        </div>
-
-        <!-- CARD 3 -->
-        <div
-          :class="[
-            'bg-white rounded-sm p-6 sm:border-b-2 transition duration-300 group cursor-pointer',
-            hoveredCard === 'mantenimiento' ? 'border-indigo-500 sm:border-b-4' : 'border-indigo-300'
-          ]"
-          @mouseenter="hoveredCard = 'mantenimiento'"
-        >
-          <div class="flex justify-center items-center h-16 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-cyan-600 group-hover:scale-150 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M15 17h5l-1.405-1.405M4 4v16h16V4H4zm4 4h8M4 12h8" />
-            </svg>
-          </div>
-          <h3 class="font-semibold text-md text-gray-700 tracking-widest">MANTENIMIENTO</h3>
-        </div>
-
-        <!-- CARD 4 -->
-        <div
-          :class="[
-            'bg-white rounded-sm p-6 sm:border-b-2 transition duration-300 group cursor-pointer',
-            hoveredCard === 'automatizacion' ? 'border-indigo-500 sm:border-b-4' : 'border-indigo-300'
-          ]"
-          @mouseenter="hoveredCard = 'automatizacion'"
-        >
-          <div class="flex justify-center items-center h-16 mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-orange-600 group-hover:scale-150 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <h3 class="font-semibold text-md text-gray-700 tracking-widest">AUTOMATIZACIONES</h3>
+          class="absolute inset-0 z-0"
+          style="
+            background-image: radial-gradient(circle at center, #FFF991 0%, transparent 70%);
+            opacity: 0.6;
+            mix-blend-mode: multiply;
+          "
+        ></div>
+        <!-- Contenido por encima del fondo -->
+        <div class="relative z-10">
+          <h2 class="text-black mb-8 text-2xl sm:text-4xl lg:text-6xl font-bold text-left">
+            Creamos soluciones <br />
+            tecnológicas <span class="bg-gradient-to-r from-[#b981ff] to-[#8152e3] bg-clip-text text-transparent font-bold">personalizadas</span>
+          </h2>
+          <p class="text-gray-600 text-lg lg:text-xl text-left">
+            Diseñamos y desarrollamos herramientas digitales personalizadas que <span class="underline decoration-wavy decoration-red-400">optimizan tus procesos</span>,
+            mejoran la experiencia de tus clientes y potencian tu marca.
+          </p>
         </div>
       </div>
-
-      <!-- TEXTO DINÁMICO -->
-      <div class="max-w-3xl mx-auto mt-20 text-center text-gray-600 text-sm md:text-lg transition duration-300 min-h-[120px]">
-        <p v-if="hoveredCard === 'software'">
-          Desarrollamos aplicaciones personalizadas que se adaptan exactamente a tu negocio. Desde sistemas de gestión interna hasta soluciones innovadoras a medida.
-        </p>
-        <p v-else-if="hoveredCard === 'web'">
-          Creamos sitios web modernos, rápidos y optimizados para atraer clientes y reflejar la identidad de tu marca profesionalmente.
-        </p>
-        <p v-else-if="hoveredCard === 'mantenimiento'">
-          Mantenemos tu software, sitio o base de datos funcionando de forma segura y eficiente. Nos encargamos de actualizaciones, backups y mejoras.
-        </p>
-        <p v-else-if="hoveredCard === 'automatizacion'">
-          Automatizamos procesos repetitivos o manuales para que ganes tiempo, reduzcas errores y hagas crecer tu negocio con menos esfuerzo.
-        </p>
-        <p v-else>
-          Brindamos soluciones integrales en tecnología para potenciar negocios. Desde el desarrollo web y de software personalizado hasta el soporte técnico y administración de bases de datos.
-        </p>
+      <!-- Columna de la imagen -->
+      <div class="flex justify-center lg:justify-end">
+        <img
+          src="../assets/tecno.webp"
+          alt="Tecnología"
+          class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg w-full h-auto object-contain"
+        />
       </div>
     </div>
-    <div class="">
-      <div class="text-4xl sm:text-6xl mt-10 mb-4 leading-tight tracking-tight">
-        <h1 class="font-bold text-gray-900 mb-2">Clientes</h1>
-        <!--<p class="font-inter text-gray-600 text-xl mb-6">que confiaron en nosotros</p>-->
-        <p class="font-inter text-gray-600 mb-12 text-xl">
-          que <span class="text-indigo-600 font-semibold">confiaron</span> en nosotros
-        </p>
-      </div>
-      <div class="flex justify-center items-center mt-6 mb-6 bg-indigo-700 p-4 text-white">
-        <img title="Break Burger - Desarrollo de sistema de pedidos" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente1.avif" alt="Cliente 1">
-          <p class=" font-inter ml-2 mr-8">Break Burger</p>
-        <img title="Cesar Pereyra Seguros - Desarrollo de Landing Page" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente2.png" alt="Cliente 2">
-          <p class=" font-inter ml-2 mr-8">Inmobiliaria Ezequiel</p>
-        <img title="Jaqueline - Desarrollo de sistema de facturación" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente3.png" alt="Cliente 3">
-          <p class=" font-inter ml-2 mr-8">Cesar Pereyra Seguros</p>
-        <img title="Inmobiliaria Ezequiel - Desarrollo de Landing Page" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente4.jpg" alt="Cliente 4">
-          <p class=" font-inter ml-2 mr-8">Yaqueline Company</p>
-      </div>
-    </div>
-    <!--<div class="bg-gradient-to-r from-indigo-600 via-indigo-500 to-indigo-400
-        border-4 border-white shadow-lg shadow-indigo-400/50
-        max-w-6xl mx-auto p-4 rounded-2xl mt-20 mb-20">
-      <div class="flex justify-between items-center">
-        <div class="flex flex-col items-center">
-          <h3 class="text-center text-xl font-inter mb-6 px-12"><span class="text-black">Nuestra experiencia nos avala:</span> 4 clientes activos, 100% de satisfacción y soluciones que realmente hacen la diferencia.</h3>
-          
-          <div class="flex justify-center items-center mt-6">
-            <div class="flex -space-x-6 rtl:space-x-reverse mx-2 mt-6">
-                <img title="Break Burger - Desarrollo de sistema de pedidos" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente1.avif" alt="Cliente 1">
-                <img title="Cesar Pereyra Seguros - Desarrollo de Landing Page" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente2.png" alt="Cliente 2">
-                <img title="Jaqueline - Desarrollo de sistema de facturación" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente3.png" alt="Cliente 3">
-                <img title="Inmobiliaria Ezequiel - Desarrollo de Landing Page" class="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" src="../assets/cliente4.jpg" alt="Cliente 4">
+    <div class="max-w-8xl mx-auto mt-32 px-4">
+      <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-12 text-black text-xl">
+        <!-- SOFTWARE A MEDIDA -->
+        <div class="bg-green-100 text-green-800 rounded-xl p-10 border border-green-200">
+            <div class=" place-items-center">
+                <div class="bg-green-500 w-20 h-20 rounded-xl mb-4 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="white" viewBox="0 0 24 24">
+                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                    </svg>
+                    <svg class="absolute" viewBox="0 0 120 120 z-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg">  <path d="M1.91734 2.01577L25.1499 23.4512L50.0672 0.330973L26.947 25.2483L63.5456 63.644L25.1499 27.0455L0.232543 50.1656L23.3527 25.2483L1.91734 2.01577Z" fill="#9C8EF4" stroke="#9C8EF4"></path>  <path d="M1.91734 2.01577L25.1499 23.4512L50.0672 0.330973L26.947 25.2483L63.5456 63.644L25.1499 27.0455L0.232543 50.1656L23.3527 25.2483L1.91734 2.01577Z" fill="green" stroke="green"></path></svg>
+                </div>
+                <h5 class="mb-2.5 font-bold">SOFTWARE A MEDIDA</h5>
+                <p class="">Desarrollamos aplicaciones personalizadas que se adaptan exactamente a tu negocio. Desde sistemas de gestión interna hasta soluciones innovadoras a medida.</p>
             </div>
-            <div>
-              <p class="text-sm italic text-white mt-6">“Nos ayudaron a crecer con una app impecable” – Break Burger</p>
+        </div>
+        <!-- DESARROLLO WEB -->
+        <div class="bg-blue-100 text-blue-800 rounded-xl p-10 border border-blue-200">
+          <div class="place-items-center">
+            <div class="bg-blue-500 w-20 h-20 rounded-xl mb-4 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="white" viewBox="0 0 24 24">
+                <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h16V5H4zm2 2h12v2H6V7zm0 4h8v2H6v-2zm0 4h10v2H6v-2z"/>
+              </svg>
+              <svg class="absolute" viewBox="0 0 120 120 z-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg">  <path d="M1.91734 2.01577L25.1499 23.4512L50.0672 0.330973L26.947 25.2483L63.5456 63.644L25.1499 27.0455L0.232543 50.1656L23.3527 25.2483L1.91734 2.01577Z" fill="#9C8EF4" stroke="#9C8EF4"></path>  <path d="M1.91734 2.01577L25.1499 23.4512L50.0672 0.330973L26.947 25.2483L63.5456 63.644L25.1499 27.0455L0.232543 50.1656L23.3527 25.2483L1.91734 2.01577Z" fill="blue" stroke="blue"></path></svg>
             </div>
+            <h5 class="mb-2.5 font-bold">DESARROLLO WEB</h5>
+            <p>Creamos sitios web modernos, rápidos y optimizados para atraer clientes y reflejar la identidad de tu marca profesionalmente.</p>
           </div>
         </div>
-        <div>
-          <img src="../assets/team.svg" alt="team" class="w-[100%] -translate-x-10 -translate-y-32 md:-translate-x-50 md:-translate-y-50 relative" />
+
+        <!-- MANTENIMIENTO -->
+        <div class="bg-orange-100 text-orange-800 rounded-xl p-10 border border-orange-200">
+          <div class="grid place-items-center text-center">
+            <div class="bg-orange-500 w-20 h-20 rounded-xl mb-4 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="white" viewBox="0 0 24 24">
+                <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97c0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1c0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/>
+              </svg>
+              <svg class="absolute" viewBox="0 0 120 120 z-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg">  <path d="M1.91734 2.01577L25.1499 23.4512L50.0672 0.330973L26.947 25.2483L63.5456 63.644L25.1499 27.0455L0.232543 50.1656L23.3527 25.2483L1.91734 2.01577Z" fill="#9C8EF4" stroke="#9C8EF4"></path>  <path d="M1.91734 2.01577L25.1499 23.4512L50.0672 0.330973L26.947 25.2483L63.5456 63.644L25.1499 27.0455L0.232543 50.1656L23.3527 25.2483L1.91734 2.01577Z" fill="orange" stroke="orange"></path></svg>
+            </div>
+            <h5 class="mb-2.5 font-bold">MANTENIMIENTO</h5>
+            <p>Mantenemos tu software, sitio o base de datos funcionando de forma segura y eficiente. Nos encargamos de actualizaciones, backups y mejoras.</p>
+          </div>
+        </div>
+
+        <!-- AUTOMATIZACIONES -->
+        <div class="bg-purple-100 text-purple-800 rounded-xl p-10 border border-purple-200">
+          <div class="grid place-items-center text-center">
+            <div class="bg-purple-500 w-20 h-20 rounded-xl mb-4 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="white" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              <svg class="absolute" viewBox="0 0 120 120 z-0" fill="currentColor" xmlns="http://www.w3.org/2000/svg">  <path d="M1.91734 2.01577L25.1499 23.4512L50.0672 0.330973L26.947 25.2483L63.5456 63.644L25.1499 27.0455L0.232543 50.1656L23.3527 25.2483L1.91734 2.01577Z" fill="#9C8EF4" stroke="#9C8EF4"></path>  <path d="M1.91734 2.01577L25.1499 23.4512L50.0672 0.330973L26.947 25.2483L63.5456 63.644L25.1499 27.0455L0.232543 50.1656L23.3527 25.2483L1.91734 2.01577Z" fill="purple" stroke="purple"></path></svg>
+            </div>
+            <h5 class="mb-2.5 font-bold">AUTOMATIZACIONES</h5>
+            <p>Automatizamos procesos repetitivos o manuales para que ganes tiempo, reduzcas errores y hagas crecer tu negocio con menos esfuerzo.</p>
+          </div>
         </div>
       </div>
-    </div>-->
+    </div>
   </section>
 </template>
 
