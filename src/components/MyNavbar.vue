@@ -31,8 +31,8 @@
               <span class="ml-2 text-white text-lg font-semibold">VIBRANIUM CODE</span>
             </div>
             <div class="hidden sm:ml-6 sm:block">
-              <div class="flex space-x-4">
-                <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-white  hover:text-indigo-300', 'rounded-md px-3 py-2 text-lg font-semibold']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
+              <div class="flex space-x-4" >
+                <a v-for="item in navigation"  :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-white  hover:text-indigo-300', 'rounded-md px-3 py-2 text-lg font-semibold']" :aria-current="item.current ? 'page' : undefined">{{ item.name }} </a>
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@
       </div>
     </div>
 
-    <DisclosurePanel class="sm:hidden">
+    <DisclosurePanel class="sm:hidden" >
       <div class="space-y-1 px-2 pb-3 pt-2">
         <DisclosureButton v-for="item in navigation" :key="item.name" as="a" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</DisclosureButton>
       </div>

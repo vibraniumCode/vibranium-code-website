@@ -12,7 +12,9 @@
     "@headlessui/vue": "^1.7.23",
     "@heroicons/vue": "^2.2.0",
     "@midudev/tailwind-animations": "^0.2.0",
+    "@vueuse/motion": "^3.0.3",
     "aos": "^2.3.4",
+    "taos": "^1.0.5",
     "vue": "^3.5.13"
   },
   "devDependencies": {

@@ -21,5 +21,5 @@ export default {
       },
     },
   },
-  plugins: [require("@midudev/tailwind-animations")],
+  plugins: [require("@midudev/tailwind-animations"), require("taos/plugin")],
 };
