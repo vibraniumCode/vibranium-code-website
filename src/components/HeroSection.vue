@@ -119,7 +119,7 @@
     </svg>
     <div class="background-text-container relative hidden 2xl:block">
       <div class="flex justify-center mb-6 ">
-        <div class="bg-[#7f56f2] text-lg font-semibold text-white px-4 py-2 rounded-full shadow-md backdrop-blur-sm flex gap-2 items-center">
+        <div class="bg-gradient-to-r from-[#653bd4] to-[#8152e3] text-lg font-semibold text-white px-4 py-2 rounded-full shadow-md backdrop-blur-sm flex gap-2 items-center">
           <span class="bg-green-400 w-2 h-2 rounded-full animate-pulse"></span>
           <span>4+ Clientes</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-lightning-charge" viewBox="0 0 16 16">
@@ -141,17 +141,23 @@
      data-aos-easing="ease-in-sine">Desarrollamos software y <br/>  sitios web que transforman negocios</h2>
     <p class="text-xl text-[#2D3748] mt-6 animate-fade-in-right">Confiá en Vibranium Code para llevar tus ideas al siguiente nivel</p>
     <div class="text-center mt-10 mb-10 animate-expand-vertically">
-      <button 
+      <!--<button 
         class="relative overflow-hidden bg-gradient-to-r from-yellow-300 to-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-yellow-500/30 hover:-translate-y-1 transition-all duration-300 group"
+      >-->
+      <button
+        class="relative bg-gradient-to-r from-slate-900 via-gray-800 to-slate-900 text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-gray-500/70 hover:-translate-y-1 transition-all duration-300 group"
       >
-        <span class="relative z-10 flex items-center justify-center gap-2 group">EMPEZÁ TU PROYECTO</span>
-        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500">
+        <div class="flex items-center justify-center gap-4">
+        <span class="relative z-10 flex items-center justify-center">EMPEZÁ TU PROYECTO</span>
+        <svg width="30" height="30" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_231_793)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M50 0H200V50V150L150 200L150 50H0L50 0ZM0 165.067V100L65.067 100L0 165.067ZM100 200H35.7777L100 135.778L100 200Z" fill="url(#paint0_linear_231_793)"/> </g> <defs> <linearGradient id="paint0_linear_231_793" x1="177" y1="-9.23648e-06" x2="39.5" y2="152.5" gradientUnits="userSpaceOnUse"> <stop stop-color="#B0B9FF"/> <stop offset="1" stop-color="#E7E9FF"/> </linearGradient> <clipPath id="clip0_231_793"> <rect width="200" height="200" fill="white"/> </clipPath> </defs> </svg>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20">
         </div>
       </button>
     </div>
     <!--<div class="mx-auto mt-20 w-[30%] h-[2px] rounded-full animate-gradient-x bg-[length:200%_100%] bg-gradient-to-r from-indigo-500 via-indigo-400 to-red-300"></div>-->
     <div class="2xl:mt-60 my-24 animate-fade-in">
-      <div class="flex justify-center items-center mt-6 mx-16 rounded-2xl mb-6 bg-[#4923c6] p-4 text-white">
+      <div class="flex justify-center items-center mt-6 mx-16 rounded-2xl mb-6 bg-gradient-to-r from-[#4923c6] via-[#5d35e0] to-[#4923c6] bg-[#4923c6] p-4 text-white">
         <div class="flex flex-col items-start">
           <p class="text-yellow-500 font-semibold text-3xl 2xl:text-5xl">{{ displayCount }}+</p>
           <p class=" font-inter font-bold">Años de experiencia</p>
