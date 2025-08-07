@@ -1,7 +1,7 @@
 <template>
   <Disclosure as="nav" v-slot="{ open }" >
     <div :class="[
-        'fixed top-0 left-1/2 transform -translate-x-1/2 w-[80%] max-w-6xl z-50 transition-colors duration-300 ease-in-out px-6 rounded-xl mt-10',
+        'fixed top-0 left-1/2 transform -translate-x-1/2 w-[80%] max-w-6xl z-50 transition-colors duration-300 ease-in-out px-6 rounded-xl xl:mt-4 2xl:mt-10',
         isScrolled ? 'bg-slate-900/50 backdrop-blur-md' : 'bg-gradient-to-r from-slate-900 via-gray-800 to-slate-900'
       ]">
       <div class="mx-auto max-w-10xl px-2 sm:px-6 lg:px-8 font-inter ">

@@ -159,22 +159,22 @@
     <div class="2xl:mt-60 my-24 animate-fade-in">
       <div class="flex justify-center items-center mt-6 mx-16 rounded-2xl mb-6 bg-gradient-to-r from-[#4923c6] via-[#5d35e0] to-[#4923c6] bg-[#4923c6] p-4 text-white">
         <div class="flex flex-col items-start">
-          <p class="text-yellow-500 font-semibold text-3xl 2xl:text-5xl">{{ displayCount }}+</p>
+          <p class="text-yellow-500 font-semibold text-xl xl:text-4xl 2xl:text-5xl">{{ displayCount }}+</p>
           <p class=" font-inter font-bold">Años de experiencia</p>
         </div>
         <div class="separator h-10 bg-gray-300 mx-8" style="width: 1px;"></div>
       <div class="flex flex-col items-start">
-          <p class="text-yellow-500 font-semibold text-3xl 2xl:text-5xl">{{displayClientes}}+</p>
+          <p class="text-yellow-500 font-semibold text-xl xl:text-4xl 2xl:text-5xl">{{displayClientes}}+</p>
           <p class=" font-inter font-bold">Clientes felices</p>
         </div>
         <div class="separator h-10 bg-gray-300 mx-8" style="width: 1px;"></div>
       <div class="flex flex-col items-start">
-          <p class="text-yellow-500 font-semibold text-3xl 2xl:text-5xl">{{displayProyectos}}+</p>
+          <p class="text-yellow-500 font-semibold text-xl xl:text-4xl 2xl:text-5xl">{{displayProyectos}}+</p>
           <p class=" font-inter font-bold">Proyectos finalizados</p>
         </div>
         <div class="separator h-10 bg-gray-300 mx-8" style="width: 1px;"></div>
       <div class="flex flex-col items-start">
-          <p class="text-yellow-500 font-semibold text-3xl 2xl:text-5xl">{{displayMiembros}}</p>
+          <p class="text-yellow-500 font-semibold text-xl xl:text-4xl 2xl:text-5xl">{{displayMiembros}}+</p>
           <p class=" font-inter font-bold">Miembros del equipo</p>
         </div>
       </div>

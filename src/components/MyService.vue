@@ -38,7 +38,7 @@
     </div>
     <div class="relative max-w-8xl mx-auto mt-10 px-4 sm:px-6 lg:px-12 xl:px-20">
        <!-- SVG de fondo posicionado absolutamente -->
-      <div class="absolute inset-0 -bottom-20 overflow-hidden pointer-events-none">
+      <div class="absolute inset-0 xl:-bottom-[18px] 2xl:-bottom-20 overflow-hidden pointer-events-none">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute bottom-0 left-0 w-full h-auto scale-110">
           <path fill="#400beec8" fill-opacity="0.8" d="M0,64L20,101.3C40,139,80,213,120,250.7C160,288,200,288,240,272C280,256,320,224,360,218.7C400,213,440,235,480,234.7C520,235,560,213,600,192C640,171,680,149,720,154.7C760,160,800,192,840,224C880,256,920,288,960,277.3C1000,267,1040,213,1080,186.7C1120,160,1160,160,1200,176C1240,192,1280,224,1320,229.3C1360,235,1400,213,1420,202.7L1440,192L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
             </path>
@@ -46,20 +46,22 @@
       </div>
       <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 xl:gap-10 2xl:gap-14 my-12 text-black text-xl" data-aos="zoom-in">
         <!-- SOFTWARE A MEDIDA -->
-        <div class="bg-green-100/70 text-green-800 rounded-xl px-10 py-24 border border-green-200 hover:shadow-2xl hover:shadow-green-500/30 hover:-translate-y-1 transition-all duration-300" >
-          <div class=" place-items-center">
-            <div class="bg-gradient-to-r from-green-400 to-green-500 w-20 h-20 rounded-xl mb-12 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="white" viewBox="0 0 24 24">
-                  <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
-              </svg>
+        <div class="bg-green-100/70 text-green-800 rounded-xl px-10 py-24 border border-green-200 hover:shadow-2xl hover:shadow-green-500/30 hover:-translate-y-1 transition-all duration-300 card-with-c" >
+          <div class="place-items-center card-content">
+            <div class=" place-items-center">
+              <div class="bg-gradient-to-r from-green-400 to-green-500 w-20 h-20 rounded-xl mb-12 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="white" viewBox="0 0 24 24">
+                    <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                </svg>
+              </div>
+              <h5 class="mb-2.5 font-bold">SOFTWARE A MEDIDA</h5>
+              <p class="">Desarrollamos aplicaciones personalizadas que se adaptan exactamente a tu negocio. Desde sistemas de gestión interna hasta soluciones innovadoras a medida.</p>
             </div>
-            <h5 class="mb-2.5 font-bold">SOFTWARE A MEDIDA</h5>
-            <p class="">Desarrollamos aplicaciones personalizadas que se adaptan exactamente a tu negocio. Desde sistemas de gestión interna hasta soluciones innovadoras a medida.</p>
           </div>
         </div>
         <!-- DESARROLLO WEB -->
-        <div class="bg-blue-100/70 text-blue-800 rounded-xl px-10 py-24 border border-blue-200 hover:shadow-2xl hover:shadow-blue-500/30 hover:-translate-y-1 transition-all duration-300">
-          <div class="place-items-center ">
+        <div class="bg-blue-100/70 text-blue-800 rounded-xl px-10 py-24 border border-blue-200 hover:shadow-2xl hover:shadow-blue-500/30 hover:-translate-y-1 transition-all duration-300 card-with-o">
+          <div class="place-items-center card-content">
             <div class="bg-gradient-to-r from-blue-400 to-blue-500 w-20 h-20 rounded-xl mb-12 flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="white" viewBox="0 0 24 24">
                 <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h16V5H4zm2 2h12v2H6V7zm0 4h8v2H6v-2zm0 4h10v2H6v-2z"/>
@@ -104,3 +106,46 @@ import { ref } from 'vue'
 
 const hoveredCard = ref(null)
 </script>
+
+<style scoped>
+.card-with-c {
+  position: relative;
+}
+
+.card-with-o {
+  position: relative;
+}
+
+.card-with-c::before {
+  content: 'C';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20rem;
+  font-weight: 900;
+  color: rgba(139, 92, 246, 0.20);
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.card-with-o::before {
+  content: 'O';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20rem;
+  font-weight: 900;
+  color: rgba(139, 92, 246, 0.20);
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+</style>
