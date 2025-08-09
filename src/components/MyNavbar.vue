@@ -5,7 +5,7 @@
         isScrolled ? 'bg-slate-900/50 backdrop-blur-md' : 'bg-gradient-to-r from-slate-900 via-gray-800 to-slate-900'
       ]">
       <div class="mx-auto max-w-10xl px-2 sm:px-6 lg:px-8 font-inter ">
-        <div class="relative flex h-16 items-center justify-center m-2 ">
+        <div class="relative flex h-16 items-center justify-end xl:justify-center 2xl:justify-center m-2 ">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <DisclosureButton class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -18,17 +18,17 @@
           <div class="flex items-center justify-center sm:items-center sm:justify-start">
             <div class="flex shrink-0 items-center">
               <svg width="51" height="40" viewBox="0 0 51 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.446 0L22.7801 8.82887C23.3936 9.35302 23.7473 10.1222 23.7473 10.9323V17.5862L13.4131 8.75734C12.7996 8.23319 12.446 7.464 12.446 6.65386V0Z" fill="#8152e3"></path>
-                <path d="M12.446 40L22.7801 31.1711C23.3936 30.647 23.7473 29.8778 23.7473 29.0677V22.4138L13.4131 31.2427C12.7996 31.7668 12.446 32.536 12.446 33.3461V40Z" fill="#6e5ff7"></path>
-                <path d="M0.117188 9.31034L10.3108 17.9705C10.805 18.3904 11.4308 18.6207 12.0775 18.6207H20.2982L10.1297 9.96253C9.63514 9.54141 9.00837 9.31034 8.36065 9.31034H0.117188Z" fill="#6e5ff7"></path>
-                <path d="M0.117188 30.6897L10.2481 22.0345C10.7432 21.6115 11.3713 21.3793 12.0206 21.3793H20.3227L10.1291 30.0394C9.63487 30.4593 9.00904 30.6897 8.36236 30.6897H0.117188Z" fill="#8152e3"></path>
-                <path d="M37.7884 0L27.4542 8.82887C26.8407 9.35302 26.4871 10.1222 26.4871 10.9323V17.5862L36.8212 8.75734C37.4347 8.23319 37.7884 7.464 37.7884 6.65386V0Z" fill="#6e5ff7"></path>
-                <path d="M37.7884 40L27.4542 31.1711C26.8407 30.647 26.4871 29.8778 26.4871 29.0677V22.4138L36.8212 31.2427C37.4347 31.7668 37.7884 32.536 37.7884 33.3461V40Z" fill="#8152e3"></path>
-                <path d="M50.1172 9.31034L39.9236 17.9705C39.4294 18.3904 38.8035 18.6207 38.1569 18.6207H29.9361L40.1047 9.96253C40.5992 9.54141 41.226 9.31034 41.8737 9.31034H50.1172Z" fill="#8152e3"></path>
-                <path d="M50.1172 30.6897L39.9863 22.0345C39.4912 21.6115 38.863 21.3793 38.2137 21.3793H29.9117L40.1052 30.0394C40.5995 30.4593 41.2253 30.6897 41.872 30.6897H50.1172Z" fill="#6e5ff7"></path>
+                <path d="M12.446 0L22.7801 8.82887C23.3936 9.35302 23.7473 10.1222 23.7473 10.9323V17.5862L13.4131 8.75734C12.7996 8.23319 12.446 7.464 12.446 6.65386V0Z" fill="#8152e3" class="hover:fill-[#6e5ff7]"></path>
+                <path d="M12.446 40L22.7801 31.1711C23.3936 30.647 23.7473 29.8778 23.7473 29.0677V22.4138L13.4131 31.2427C12.7996 31.7668 12.446 32.536 12.446 33.3461V40Z" fill="#6e5ff7" class="hover:fill-[#8152e3]"></path>
+                <path d="M0.117188 9.31034L10.3108 17.9705C10.805 18.3904 11.4308 18.6207 12.0775 18.6207H20.2982L10.1297 9.96253C9.63514 9.54141 9.00837 9.31034 8.36065 9.31034H0.117188Z" fill="#6e5ff7" class="hover:fill-[#8152e3]"></path>
+                <path d="M0.117188 30.6897L10.2481 22.0345C10.7432 21.6115 11.3713 21.3793 12.0206 21.3793H20.3227L10.1291 30.0394C9.63487 30.4593 9.00904 30.6897 8.36236 30.6897H0.117188Z" fill="#8152e3" class="hover:fill-[#6e5ff7]"></path>
+                <path d="M37.7884 0L27.4542 8.82887C26.8407 9.35302 26.4871 10.1222 26.4871 10.9323V17.5862L36.8212 8.75734C37.4347 8.23319 37.7884 7.464 37.7884 6.65386V0Z" fill="#6e5ff7" class="hover:fill-[#8152e3]"></path>
+                <path d="M37.7884 40L27.4542 31.1711C26.8407 30.647 26.4871 29.8778 26.4871 29.0677V22.4138L36.8212 31.2427C37.4347 31.7668 37.7884 32.536 37.7884 33.3461V40Z" fill="#8152e3" class="hover:fill-[#6e5ff7]"></path>
+                <path d="M50.1172 9.31034L39.9236 17.9705C39.4294 18.3904 38.8035 18.6207 38.1569 18.6207H29.9361L40.1047 9.96253C40.5992 9.54141 41.226 9.31034 41.8737 9.31034H50.1172Z" fill="#8152e3" class="hover:fill-[#6e5ff7]"></path>
+                <path d="M50.1172 30.6897L39.9863 22.0345C39.4912 21.6115 38.863 21.3793 38.2137 21.3793H29.9117L40.1052 30.0394C40.5995 30.4593 41.2253 30.6897 41.872 30.6897H50.1172Z" fill="#6e5ff7" class="hover:fill-[#8152e3]"></path>
               </svg>
-              <span class="ml-2 text-white text-lg font-semibold">VIBRANIUM CODE</span>
-              <div class="separator h-10 bg-gray-300 ml-10" style="width: 1px;"></div>
+              <span class="ml-2 text-white text-lg font-semibold hidden xl:block 2xl:block">VIBRANIUM CODE</span>
+              <div class="separator h-10 bg-gray-300 ml-10 hidden xl:block 2xl:block" style="width: 1px;"></div>
             </div>
             <div class="hidden sm:ml-6 sm:block">
               <div class="flex space-x-4 uppercase" >

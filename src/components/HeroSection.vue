@@ -5,7 +5,7 @@
          data-aos-duration="1200" 
          data-aos-delay="600"  
          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 200 200" width="120" height="120" class="absolute coolshapes star-6 hidden 2xl:block 2xl:top-0 2xl:right-40 animate-spin-and-bounce">
-      <g clip-path="url(#cs_clip_1_star-6-large)">
+      <g clip-path="url(#cs_clip_1_star-6-large)" class="opacity-60">
         <mask id="cs_mask_1_star-6-large" style="mask-type:alpha" width="200" height="200" x="0" y="0" maskUnits="userSpaceOnUse">
           <path fill="#fff" d="M120 80L100 0 80 80 0 100l80 20 20 80 20-80 80-20-80-20z"></path>
         </mask>
@@ -45,7 +45,7 @@
       data-aos-duration="1200" 
       data-aos-delay="600"
       xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 200 200" width="70" height="70" class="absolute coolshapes star-6 hidden 2xl:block 2xl:top-80 2xl:right-80 animate-spin-and-bounce">
-      <g clip-path="url(#cs_clip_1_star-6-small)">
+      <g clip-path="url(#cs_clip_1_star-6-small)" class="opacity-60">
         <mask id="cs_mask_1_star-6-small" style="mask-type:alpha" width="200" height="200" x="0" y="0" maskUnits="userSpaceOnUse">
           <path fill="#fff" d="M120 80L100 0 80 80 0 100l80 20 20 80 20-80 80-20-80-20z"></path>
         </mask>
@@ -84,7 +84,7 @@
       data-aos-duration="1200" 
       data-aos-delay="600"
       xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 200 200" width="60" height="60" class="absolute coolshapes star-6 hidden 2xl:block 2xl:bottom-60 2xl:left-20 animate-spin-and-bounce">
-      <g clip-path="url(#cs_clip_1_star-6-small)">
+      <g clip-path="url(#cs_clip_1_star-6-small)" class="opacity-60">
         <mask id="cs_mask_1_star-6-small" style="mask-type:alpha" width="200" height="200" x="0" y="0" maskUnits="userSpaceOnUse">
           <path fill="#fff" d="M120 80L100 0 80 80 0 100l80 20 20 80 20-80 80-20-80-20z"></path>
         </mask>
@@ -129,7 +129,7 @@
         </div> 
       </div>
     </div>
-    <h1 class="text-gray-900 font-bold text-6xl sm:text-7xl mt-10 mb-4 leading-tight tracking-tight <!--animate-fade-in-->" data-aos="fade-right"
+    <h1 class="text-gray-900 font-bold text-6xl sm:text-7xl mt-10 mb-10 leading-tight tracking-tight <!--animate-fade-in-->" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
         Impulsamos tu <span class="bg-gradient-to-r from-[#653bd4] to-[#8152e3] bg-clip-text text-transparent">futuro digital</span> <br />con 
@@ -156,7 +156,7 @@
       </button>
     </div>
     <!--<div class="mx-auto mt-20 w-[30%] h-[2px] rounded-full animate-gradient-x bg-[length:200%_100%] bg-gradient-to-r from-indigo-500 via-indigo-400 to-red-300"></div>-->
-    <div class="2xl:mt-60 my-24 animate-fade-in">
+    <div class="2xl:mt-60 my-24 animate-fade-in hidden xl:block  2xl:block">
       <div class="flex justify-center items-center mt-6 mx-16 rounded-2xl mb-6 bg-gradient-to-r from-[#4923c6] via-[#5d35e0] to-[#4923c6] bg-[#4923c6] p-4 text-white">
         <div class="flex flex-col items-start">
           <p class="text-yellow-500 font-semibold text-xl xl:text-4xl 2xl:text-5xl">{{ displayCount }}+</p>
