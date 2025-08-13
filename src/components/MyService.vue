@@ -152,23 +152,23 @@ const hoveredCard = ref(null)
 
 .card-with-c::before {
   content: 'C';
-  display: none;
+  //display: none;
 }
 
 .card-with-o::before {
   content: 'O';
-  display: none;
+  //display: none;
 }
 
 .card-with-d::before {
   content: 'D';
-  display: none;
+  //display: none;
 }
 
 
 .card-with-e::before {
   content: 'E';
-  display: none;
+  //display: none;
 }
 
 /* Celular chico */
