@@ -119,7 +119,7 @@
     <!-- Indicadores de posición -->
     <div class="flex justify-center mt-8 gap-2">
       <button 
-        v-for="(service, index) in services" 
+        v-for="(_, index) in services" 
         :key="index"
         @click="setActiveService(index)"
         :class="[
