@@ -1,5 +1,6 @@
 <template>
-<RadialBackground/>
+<!--<RadialBackground/>-->
+
 <MyNavbar/>
 <HeroSection/>
 <MyService/>
