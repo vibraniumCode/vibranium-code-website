@@ -1,6 +1,9 @@
 <template>
   <section class="bg-[#1d232a] pt-6 pb-4">
-  <div class="bg-[#f3f3f4] mx-10 rounded-xl font-inter text-center text-white to-white relative z-10">
+  <div class="bg-gradient-to-b from-[#c0c0c3] to-[#f8f8fb] mx-10 rounded-xl font-inter text-center text-white  relative z-10" 
+  data-aos="zoom-in"
+  data-aos-duration="1000" 
+  >
     <div class="grid grid-cols-1 lg:grid-cols-2 gap- items-center max-w-7xl mx-auto px-4 py-12">
       <!-- Columna del texto -->
       <div class="relative rounded-xl overflow-hidden p-8 md:p-12">
@@ -14,7 +17,7 @@
           "
         ></div>
         <!-- Contenido por encima del fondo -->
-         <div class="relative z-10">
+        <div class="relative z-10">
           <h2 class="text-black mb-8 text-2xl sm:text-4xl lg:text-6xl font-bold text-left" data-aos="fade-up">
             Creamos soluciones <br />
             tecnológicas <span class="text-[#653bd4] font-bold">personalizadas</span>
@@ -26,7 +29,9 @@
         </div>
       </div>
       <!-- Columna de la imagen -->
-      <div class="flex justify-center lg:justify-end" data-aos="zoom-in-left">
+      <div class="flex justify-center lg:justify-end" data-aos="zoom-in-left"
+      data-aos-duration="800"
+      data-aos-delay="500">
         <img
           src="../assets/tecnoweb.jpg"
           alt="Tecnología"

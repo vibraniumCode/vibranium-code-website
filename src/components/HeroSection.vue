@@ -158,11 +158,11 @@
         </div>
         <!--<div class="mx-auto mt-20 w-[30%] h-[2px] rounded-full animate-gradient-x bg-[length:200%_100%] bg-gradient-to-r from-indigo-500 via-indigo-400 to-red-300"></div>-->
       </div>
-        <div><!-- Mockup de laptop -->
+        <div data-aos="zoom-in-up" data-aos-duration="800" ><!-- Mockup de laptop -->
           <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
               <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                   <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-lg" alt="">
-                  <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                  <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class=" dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
               </div>
           </div>
           <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
@@ -171,7 +171,7 @@
         </div>
     </div>
     <div class="2xl:mt-60 mt-24 mb-12 animate-fade-in hidden xl:block 2xl:block">
-          <div class="flex justify-center items-center mt-6 mx-16 rounded-2xl mb-6 bg-gradient-to-r from-[#20096c] via-[#4513e9] to-[#20096c] bg-[#4923c6] p-4 text-white">
+          <div class="flex justify-center items-center mt-6 mx-16 rounded-2xl mb-6 bg-gradient-to-r from-[#20096c] via-[#3404d0] to-[#20096c] p-4 text-white">
             <div class="flex flex-col items-start xl:py-2">
               <p class="text-yellow-500 font-semibold text-xl xl:text-4xl 2xl:text-5xl">{{ displayCount }}+</p>
               <p class=" font-inter font-bold">Años de experiencia</p>

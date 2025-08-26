@@ -82,3 +82,20 @@
         </div>
       </div>
     </div>
+
+
+
+
+{
+    id: 4,
+    title: 'E-commerce',
+    description: 'Tiendas online completas con gestión de inventario, pasarelas de pago seguras y herramientas de marketing digital integradas.',
+    shortDesc: 'Tiendas online completas',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&auto=format&q=75',
+    bgColor: 'bg-gradient-to-br from-[#f093fb] to-[#f5576c]',
+    textColor: 'text-white',
+    buttonClass: 'text-[#f5576c] bg-white hover:bg-gray-100',
+    spanColor: 'text-white/80',
+    cta: 'Vendé online hoy',
+    icon: ArrowIcon
+  }
