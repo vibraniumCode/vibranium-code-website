@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#1d232a] mt-8 sm:mt-10 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-60 pt-20 pb-[1px] font-inter text-center relative z-10 ">
+  <section class="bg-[#1d232a] mt-8 sm:mt-10 md:mt-16 lg:mt-24 xl:mt-0 2xl:mt-60 pt-20 pb-[1px] text-center relative z-10 ">
     <!-- Canvas para las partículas -->
     <div id="particles-js" class="absolute inset-0"></div>
     <!-- Estrella grande - arriba derecha (solo pantallas grandes) -->
@@ -140,13 +140,13 @@
             <span class="underline decoration-[#653bd4]">tecnología</span> 
             de alto nivel
         </h1>
-        <h2 class="text-2xl font-semibold text-white my-2" data-aos="fade-left"
+        <h2 class="text-2xl font-semibold text-white my-2 font-inter" data-aos="fade-left"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine">Software personalizado que hace crecer tu negocio</h2>
         <p class="text-lg text-white animate-fade-in-right">Confiá en Vibranium Code para llevar tus ideas al siguiente nivel</p>
         <div class="mt-10 mb-10 animate-expand-vertically">
           <button
-            class="relative bg-gradient-to-r from-black via-black to-black text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-gray-500/70 hover:-translate-y-1 transition-all duration-300 group"
+            class="relative bg-[#FACC15] text-black font-inter px-8 py-4 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-gray-500/70 hover:-translate-y-1 transition-all duration-300 group"
           >
             <div class="flex items-center justify-center gap-4">
             <span class="relative z-10 flex items-center justify-center">OBTÉN TU COTIZACIÓN GRATUITA</span>

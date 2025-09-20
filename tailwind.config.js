@@ -9,6 +9,7 @@ export default {
         inter: ["Inter", "sans-serif"],
         sans: ['"Work Sans"', "sans-serif"], // ya tenés esto
         mono: ['"JetBrains Mono"', "monospace"], // y esto también
+        poppins: ["Poppins", "sans-serif"],
       },
       animation: {
         "gradient-x": "gradient-x 4s ease infinite",
